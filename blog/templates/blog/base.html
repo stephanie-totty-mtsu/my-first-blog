@@ -10,15 +10,15 @@
     <body>
         <div class="page-header">
             {% if user.is_authenticated %}
-                <a href="{% url 'post_new' %}" class="top-menu">
+                <a href="{% url 'post_new' %}" class="top-menu2">
                     {% include './icons/plus.svg' %}
                 </a>
-                <a href="{% url 'post_draft_list' %}" class="top-menu">
+                <a href="{% url 'post_draft_list' %}" class="top-menu2">
                     {% include './icons/pencil-square.svg' %}
                 </a>
-                <p class="top-menu">Hello {{ user.username }} <small><a href="{% url 'logout' %}">Log out</a></small></p>
+                <p class="top-menu2">Hello {{ user.username }} <small><a href="{% url 'logout' %}">Log out</a></small></p>
             {% else %}
-                <a href="{% url 'login' %}" class="top-menu">
+                <a href="{% url 'login' %}" class="top-menu2">
                     {% include './icons/lock.svg' %}
                 </a>
             {% endif %}
